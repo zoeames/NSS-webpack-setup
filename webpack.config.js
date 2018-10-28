@@ -44,5 +44,9 @@ module.exports = {
         fallback: 'style-loader'
       })
     }]
+  },
+  devServer: {
+    historyApiFallback: true,
+    open: isDev ? true : false
   }
 };
