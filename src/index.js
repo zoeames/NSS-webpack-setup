@@ -1,7 +1,10 @@
+import $ from 'jquery';
+import 'bootstrap';
+
 import message from './message';
+
 import './index.scss';
 
-const paragraph = document.createElement('p');
-paragraph.innerHTML = message;
-
-document.body.prepend(paragraph);
+$('#click-button').on('click', () => {
+  $('#important-text').append(message);
+});
